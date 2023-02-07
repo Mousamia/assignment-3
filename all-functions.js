@@ -15,3 +15,23 @@ function mindGame(num){
     result = result-5;
     return result;
 }
+
+// Problem - 2: evenOdd() is a function checking if a string has even number of letters or not
+function evenOdd(text){
+    if(typeof(text) === "number"){
+        return "Please Enter a String";
+    }
+    // storing the length of string
+    let len = text.length;
+    
+    if((len%2) != 0){
+        return "odd";
+    }
+
+    if((len%2) === 0){
+        return "even";
+    }
+
+}
+
+console.log(evenOdd("Batch7"));

@@ -52,3 +52,18 @@ function isLGSeven(num){
 
 }
 
+/* Problem -4: findingBadData() is a function checks how many good data (positive numbers) and bad data (negeative nubers) exists in an array */
+function findingBadData(ar){
+    if(Array.isArray(ar) == false ){
+        return "Please Give an array as Input";
+    }
+    let badData = 0;
+    // counting array length
+    let len = ar.length;
+    for(let i = 0 ; i < len ; i++){
+        if(ar[i] < 0 ){
+            badData++;
+        }
+    }
+    return badData;
+}

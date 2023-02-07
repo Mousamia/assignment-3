@@ -1,4 +1,4 @@
-// Problem-1: mindGame()->a function returns a number multiplied by 3, added 10, divided by 2, and subtracted with 5
+/* Problem-1: mindGame()->a function returns a number multiplied by 3, added 10, divided by 2, and subtracted with 5 */
 function mindGame(num){
     // checking if num is positive
     if(num < 0){
@@ -16,14 +16,14 @@ function mindGame(num){
     return result;
 }
 
-// Problem - 2: evenOdd() is a function checking if a string has even number of letters or not
+/* Problem - 2: evenOdd() is a function checking if a string has even number of letters or not */
 function evenOdd(text){
     if(typeof(text) === "number"){
         return "Please Enter a String";
     }
     // storing the length of string
     let len = text.length;
-    
+
     if((len%2) != 0){
         return "odd";
     }
@@ -34,4 +34,21 @@ function evenOdd(text){
 
 }
 
-console.log(evenOdd("Batch7"));
+/*Problem -3: isLGSeven() is a function checks the diiference of a number & 7, if difference is greater than 7 return the double of input otherwise return the difference */
+function isLGSeven(num){
+    // checkng if num is string
+    if(typeof(num) === "string"){
+        return "Please Enter Any Number";
+    }
+    let difference = num - 7;
+
+    if(difference < 7){
+        return difference;
+    }
+
+    if(difference >= 7){
+        return num*2;
+    }
+
+}
+

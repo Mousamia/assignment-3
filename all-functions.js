@@ -78,6 +78,7 @@ function findingBadData(ar){
 
 /* Problem - 5: gemsToDiamond()-> is a function that takes three parameters as input and return diamond number */
 function gemsToDiamond(input1, input2, input3){
+    // number of arguments checked
     if(arguments.length !== 3){
         return "Please Enter Three Numbers"
        }
